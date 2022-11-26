@@ -21,7 +21,7 @@
     </h1>
   </div>
 
-  <div>
+  <div class="mt-5">
     <div class=" text-center">
       <button
         (click)="showSetting()"
@@ -32,7 +32,7 @@
       >
     </div>
 
-    <div class="d-flex justify-content-center w-100 mt-5">
+    <div class="d-flex justify-content-center w-100 mt-3">
       <div *ngIf="isShowSettings">
         <div class="d-flex justify-content-between">
           Marża: {{ getMarkUp() }}
@@ -56,27 +56,27 @@
     <div class="d-flex justify-content-center">
       <div
         *ngIf="isDiscountSettings"
-        class="d-flex justify-content-center w-25 mt-2 border border-2 border-danger"
+        class="d-flex justify-content-center w-100"
       >
-        <span (click)="setDiscount(0.9)" class="me-2">10%</span>
-        <span (click)="setDiscount(0.8)" class="me-2">20%</span>
-        <span (click)="setDiscount(0.7)" class="me-2">30%</span>
-        <span (click)="setDiscount(0.6)" class="me-2">40%</span>
-        <span (click)="setDiscount(0.5)" class="me-2">50%</span>
+        <button (click)="setDiscount(0.9)" class="me-2 btn btn-primary">10%</button>
+        <button (click)="setDiscount(0.8)" class="me-2 btn btn-primary">20%</button>
+        <button (click)="setDiscount(0.7)" class="me-2 btn btn-primary">30%</button>
+        <button (click)="setDiscount(0.6)" class="me-2 btn btn-primary">40%</button>
+        <button (click)="setDiscount(0.5)" class="me-2 btn btn-primary">50%</button>
       </div>
 
       <div
         *ngIf="isMarkUpSettings"
-        class="d-flex justify-content-center w-25 mt-2 border border-2 border-danger"
+        class="d-flex justify-content-center w-100 mt-2"
       >
-        <span (click)="setMarkUp(2)" class="me-2">2x</span>
-        <span (click)="setMarkUp(2.5)" class="me-2">2.5x</span>
-        <span (click)="setMarkUp(3)" class="me-2">3x</span>
-        <span (click)="setMarkUp(3.5)" class="me-2">3.5x</span>
-        <span (click)="setMarkUp(4)" class="me-2">4x</span>
-        <span (click)="setMarkUp(4.5)" class="me-2">4.5x</span>
-        <span (click)="setMarkUp(5)" class="me-2">5x</span>
-        <span (click)="setMarkUp(5.5)" class="me-2">5.5x</span>
+        <button (click)="setMarkUp(2)" class="me-2 btn btn-primary">2x</button>
+        <button (click)="setMarkUp(2.5)" class="me-2 btn btn-primary">2.5x</button>
+        <button (click)="setMarkUp(3)" class="me-2 btn btn-primary">3x</button>
+        <button (click)="setMarkUp(3.5)" class="me-2 btn btn-primary">3.5x</button>
+        <button (click)="setMarkUp(4)" class="me-2 btn btn-primary">4x</button>
+        <button (click)="setMarkUp(4.5)" class="me-2 btn btn-primary">4.5x</button>
+        <button (click)="setMarkUp(5)" class="me-2 btn btn-primary">5x</button>
+        <button (click)="setMarkUp(5.5)" class="me-2 btn btn-primary">5.5x</button>
       </div>
     </div>
   </div>
