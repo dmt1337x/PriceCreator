@@ -32,17 +32,14 @@ export class AppComponent {
   }
 
   ceilPriceInPLN() {
-    if (this.priceInPLN < 39) {
-      this.priceInPLN = 39;
-    }
-    return this.priceInPLN < 45 ? 45 : Math.ceil(this.priceInPLN);
+    return this.priceInPLN < 45 ? 44.9 : Math.ceil(this.priceInPLN) - 0.1;
   }
 
   showFinalPrice(): number {
     if (this.priceAfterDiscount <= 39) {
-      return (this.finalPrice = 39.9);
+      return (this.finalPrice = 39.9) && (this.priceInPLN = 39.9);
     }
-    if (this.priceAfterDiscount <= 45) {
+    if (this.priceAfterDiscount > 39 && this.priceAfterDiscount <= 45) {
       return (this.finalPrice = 44.9);
     }
     if (this.priceAfterDiscount > 45 && this.priceAfterDiscount <= 50) {
@@ -105,6 +102,64 @@ export class AppComponent {
     if (this.priceAfterDiscount > 140 && this.priceAfterDiscount <= 145) {
       return (this.finalPrice = 144.9);
     }
+    if (this.priceAfterDiscount > 145 && this.priceAfterDiscount <= 150) {
+      return (this.finalPrice = 149.9);
+    }
+    if (this.priceAfterDiscount > 150 && this.priceAfterDiscount <= 155) {
+      return (this.finalPrice = 154.9);
+    }
+    if (this.priceAfterDiscount > 155 && this.priceAfterDiscount <= 160) {
+      return (this.finalPrice = 159.9);
+    }
+    if (this.priceAfterDiscount > 160 && this.priceAfterDiscount <= 165) {
+      return (this.finalPrice = 164.9);
+    }
+    if (this.priceAfterDiscount > 165 && this.priceAfterDiscount <= 170) {
+      return (this.finalPrice = 169.9);
+    }
+    if (this.priceAfterDiscount > 170 && this.priceAfterDiscount <= 180) {
+      return (this.finalPrice = 179.9);
+    }
+    if (this.priceAfterDiscount > 180 && this.priceAfterDiscount <= 190) {
+      return (this.finalPrice = 189.9);
+    }
+    if (this.priceAfterDiscount > 190 && this.priceAfterDiscount <= 200) {
+      return (this.finalPrice = 199.9);
+    }
+    if (this.priceAfterDiscount > 200 && this.priceAfterDiscount <= 210) {
+      return (this.finalPrice = 209.9);
+    }
+    if (this.priceAfterDiscount > 210 && this.priceAfterDiscount <= 220) {
+      return (this.finalPrice = 219.9);
+    }
+    if (this.priceAfterDiscount > 220 && this.priceAfterDiscount <= 230) {
+      return (this.finalPrice = 229.9);
+    }
+    if (this.priceAfterDiscount > 230 && this.priceAfterDiscount <= 240) {
+      return (this.finalPrice = 239.9);
+    }
+    if (this.priceAfterDiscount > 240 && this.priceAfterDiscount <= 250) {
+      return (this.finalPrice = 249.9);
+    }
+    if (this.priceAfterDiscount > 250 && this.priceAfterDiscount <= 260) {
+      return (this.finalPrice = 259.9);
+    }
+    if (this.priceAfterDiscount > 260 && this.priceAfterDiscount <= 270) {
+      return (this.finalPrice = 269.9);
+    }
+    if (this.priceAfterDiscount > 270 && this.priceAfterDiscount <= 280) {
+      return (this.finalPrice = 279.9);
+    }
+    if (this.priceAfterDiscount > 280 && this.priceAfterDiscount <= 290) {
+      return (this.finalPrice = 289.9);
+    }
+    if (this.priceAfterDiscount > 290 && this.priceAfterDiscount <= 300) {
+      return (this.finalPrice = 299.9);
+    }
+    if (this.priceAfterDiscount > 300 && this.priceAfterDiscount <= 310) {
+      return (this.finalPrice = 309.9);
+    }
+
     return 0;
   }
 }
