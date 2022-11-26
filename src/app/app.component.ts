@@ -35,12 +35,12 @@ export class AppComponent {
     if (this.priceInPLN < 39) {
       this.priceInPLN = 39;
     }
-    return Math.ceil(this.priceInPLN);
+    return this.priceInPLN < 45 ? 45 : Math.ceil(this.priceInPLN);
   }
 
   showFinalPrice(): number {
     if (this.priceAfterDiscount <= 39) {
-      return (this.finalPrice = 39);
+      return (this.finalPrice = 39.9);
     }
     if (this.priceAfterDiscount <= 45) {
       return (this.finalPrice = 44.9);
@@ -105,6 +105,6 @@ export class AppComponent {
     if (this.priceAfterDiscount > 140 && this.priceAfterDiscount <= 145) {
       return (this.finalPrice = 144.9);
     }
-    return (this.finalPrice = this.priceAfterDiscount);
+    return 0;
   }
 }
