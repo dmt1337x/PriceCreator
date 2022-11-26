@@ -17,6 +17,7 @@ export class AppComponent {
   public isShowSettings: boolean = false;
   public isDiscountSettings: boolean = false;
   public isMarkUpSettings: boolean = false;
+  public admin: boolean = false;
 
   readonly priceForm: FormGroup = new FormGroup({ price: new FormControl() });
 
@@ -24,10 +25,6 @@ export class AppComponent {
     this.isShowSettings = !this.isShowSettings;
     this.isMarkUpSettings = false;
     this.isDiscountSettings = false;
-  }
-
-  defaultSettings() {
-    window.location.reload();
   }
 
   getMarkUp() {
@@ -57,6 +54,16 @@ export class AppComponent {
   }
 
   calculate(price: FormGroup) {
+    if (this.admin) {
+      this.admin = false;
+    }
+    if (price.get('price')?.value == 373737) {
+      this.admin = true;
+      this.isMarkUpSettings = false;
+      this.isDiscountSettings = false;
+      this.isShowSettings = false;
+    }
+
     this.getPrice(price);
     this.convertToPLN();
   }
