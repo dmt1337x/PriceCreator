@@ -1,0 +1,927 @@
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"position": 220
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "q56y0d1qXD",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"position": 220
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "getPrice()",
+						"children": [
+							{
+								"actionId": "RXJS_METHOD_STATEMENT_CREATE",
+								"label": "Create Statement",
+								"callPath": [
+									"getPrice"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "getPrice()",
+						"children": [
+							{
+								"actionId": "RXJS_METHOD_STATEMENT_CREATE",
+								"label": "Create Statement",
+								"callPath": [
+									"getPrice"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [API] Request for angular-component/form-properties/add: {
+	"action": "angular-component/form-properties/add",
+	"params": {
+		"propertyName": "priceForm",
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"fields": {
+			"price": "text"
+		}
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "q56y0d1qXD",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/form-properties/add"
+}
+[info] [CLI] Calling Command angular-component/form-properties/add: {
+	"funcParams": {
+		"propertyName": "priceForm",
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"fields": {
+			"price": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command angular-component/form-properties/add"
+}
+[info] [CommandBus]: Dispatching command SMART_COMPONENT_ADD_FORM_PROPERTY: {
+	"commandName": "SMART_COMPONENT_ADD_FORM_PROPERTY",
+	"payload": {
+		"componentTsFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"propertyName": "priceForm",
+		"fields": {
+			"price": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command SMART_COMPONENT_ADD_FORM_PROPERTY"
+}
+[info] [EventBus]: Broadcasting event SMART_COMPONENT_FORM_ADDED: {
+	"type": "SMART_COMPONENT_FORM_ADDED",
+	"payload": {
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"componentName": "AppComponent"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event SMART_COMPONENT_FORM_ADDED"
+}
+[info] [EventBus]: Broadcasted SMART_COMPONENT_FORM_ADDED: {
+	"event": {
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"componentName": "AppComponent"
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted SMART_COMPONENT_FORM_ADDED"
+}
+[info] [CommandBus]: Dispatching command MODULE_IMPORT_REACTIVE_FORM: {
+	"commandName": "MODULE_IMPORT_REACTIVE_FORM",
+	"payload": {
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"moduleName": "ReactiveFormsModule",
+		"declarationModules": [
+			{
+				"name": "AppModule",
+				"path": "E:/WORK/PriceCreator/src/app/app.module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command MODULE_IMPORT_REACTIVE_FORM"
+}
+[info] [CommandBus]: Handled  MODULE_IMPORT_REACTIVE_FORM: {
+	"commandName": "MODULE_IMPORT_REACTIVE_FORM",
+	"payload": {
+		"componentFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"moduleName": "ReactiveFormsModule",
+		"declarationModules": [
+			{
+				"name": "AppModule",
+				"path": "E:/WORK/PriceCreator/src/app/app.module.ts"
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  MODULE_IMPORT_REACTIVE_FORM"
+}
+[info] [CommandBus]: Handled  SMART_COMPONENT_ADD_FORM_PROPERTY: {
+	"commandName": "SMART_COMPONENT_ADD_FORM_PROPERTY",
+	"payload": {
+		"componentTsFile": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"propertyName": "priceForm",
+		"fields": {
+			"price": "text"
+		}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  SMART_COMPONENT_ADD_FORM_PROPERTY"
+}
+[info] [CLI] Called Command angular-component/form-properties/add: {
+	"message": "[CLI] Called Command angular-component/form-properties/add",
+	"level": "info"
+}
+[info] [API] Response ok: angular-component/form-properties/add: {
+	"result": {
+		"filePath": "E:/WORK/PriceCreator/src/app/app.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: angular-component/form-properties/add"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"position": 0
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "hR2XI-YSS_",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"position": 0
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "AppComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {
+			"parentClass": "AppComponent",
+			"options": [
+				{
+					"type": "forms"
+				},
+				{
+					"type": "lists"
+				}
+			]
+		},
+		"children": [
+			{
+				"actionId": "ADD_TEMPLATE",
+				"label": "Display Data",
+				"callPath": []
+			},
+			{
+				"actionId": "ADD_LAYOUT",
+				"label": "Display Layout",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [API] Request for angular-component/properties/list: {
+	"action": "angular-component/properties/list",
+	"params": {
+		"entityFilePath": "E:/WORK/PriceCreator/src/app/app.component.ts"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "hR2XI-YSS_",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/properties/list"
+}
+[info] [API] Response ok: angular-component/properties/list: {
+	"result": [
+		{
+			"label": "priceForm",
+			"templateType": "forms",
+			"typeProperties": []
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: angular-component/properties/list"
+}
+[info] [CLI] Calling Query angular-component/properties/list: {
+	"funcParams": {
+		"entityFilePath": "E:/WORK/PriceCreator/src/app/app.component.ts"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query angular-component/properties/list"
+}
+[info] [CLI] Called Query angular-component/properties/list: {
+	"result": [
+		{
+			"label": "priceForm",
+			"templateType": "forms",
+			"typeProperties": []
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query angular-component/properties/list"
+}
+[info] [API] Request for angular-component/templates/get: {
+	"action": "angular-component/templates/get",
+	"params": {
+		"name": "forms"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "hR2XI-YSS_",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/templates/get"
+}
+[info] [API] Response ok: angular-component/templates/get: {
+	"result": [
+		{
+			"label": "form",
+			"contextVariables": []
+		}
+	],
+	"level": "info",
+	"message": "[API] Response ok: angular-component/templates/get"
+}
+[info] [CLI] Calling Query angular-component/templates/get: {
+	"funcParams": {
+		"name": "forms"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query angular-component/templates/get"
+}
+[info] [CLI] Called Query angular-component/templates/get: {
+	"result": [
+		{
+			"label": "form",
+			"contextVariables": []
+		}
+	],
+	"level": "info",
+	"message": "[CLI] Called Query angular-component/templates/get"
+}
+[info] [API] Request for angular-component/templates/add-form: {
+	"action": "angular-component/templates/add-form",
+	"params": {
+		"componentHtmlFilePath": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"position": 0,
+		"propertyName": "priceForm",
+		"formTemplate": "form"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "hR2XI-YSS_",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.html",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for angular-component/templates/add-form"
+}
+[info] [CLI] Calling Command angular-component/templates/add-form: {
+	"funcParams": {
+		"componentHtmlFilePath": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"position": 0,
+		"propertyName": "priceForm",
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command angular-component/templates/add-form"
+}
+[info] [CommandBus]: Dispatching command AddFormToTemplateCommand: {
+	"commandName": "AddFormToTemplateCommand",
+	"payload": {
+		"workspaceRoot": "E:/WORK/PriceCreator",
+		"componentTs": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"componentHtml": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"className": "AppComponent",
+		"propertyName": "priceForm",
+		"position": 0,
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command AddFormToTemplateCommand"
+}
+[info] [EventBus]: Broadcasting event TemplateAddedEvent: {
+	"type": "TemplateAddedEvent",
+	"payload": {
+		"componentTs": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"tokens": {}
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasting event TemplateAddedEvent"
+}
+[info] [EventBus]: Broadcasted TemplateAddedEvent: {
+	"event": {
+		"componentTs": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"tokens": {}
+	},
+	"level": "info",
+	"message": "[EventBus]: Broadcasted TemplateAddedEvent"
+}
+[info] [CommandBus]: Handled  AddFormToTemplateCommand: {
+	"commandName": "AddFormToTemplateCommand",
+	"payload": {
+		"workspaceRoot": "E:/WORK/PriceCreator",
+		"componentTs": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"componentHtml": "E:/WORK/PriceCreator/src/app/app.component.html",
+		"className": "AppComponent",
+		"propertyName": "priceForm",
+		"position": 0,
+		"formTemplate": "form"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  AddFormToTemplateCommand"
+}
+[info] [CLI] Called Command angular-component/templates/add-form: {
+	"message": "[CLI] Called Command angular-component/templates/add-form",
+	"level": "info"
+}
+[info] [API] Response ok: angular-component/templates/add-form: {
+	"result": {
+		"filePath": "E:/WORK/PriceCreator/src/app/app.component.html"
+	},
+	"level": "info",
+	"message": "[API] Response ok: angular-component/templates/add-form"
+}
+[info] [CommandBus]: Dispatching command ImportTemplateModulesCommand: {
+	"commandName": "ImportTemplateModulesCommand",
+	"payload": {
+		"componentModuleFilePaths": [
+			"E:/WORK/PriceCreator/src/app/app.module.ts"
+		],
+		"addedTokens": {}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command ImportTemplateModulesCommand"
+}
+[info] [CommandBus]: Handled  ImportTemplateModulesCommand: {
+	"commandName": "ImportTemplateModulesCommand",
+	"payload": {
+		"componentModuleFilePaths": [
+			"E:/WORK/PriceCreator/src/app/app.module.ts"
+		],
+		"addedTokens": {}
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  ImportTemplateModulesCommand"
+}
+[info] [API] Request for entity/actions: {
+	"action": "entity/actions",
+	"params": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"position": 361
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "CTYjmbuf0D",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for entity/actions"
+}
+[info] [CLI] Calling Query entity/actions: {
+	"funcParams": {
+		"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"position": 361
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query entity/actions"
+}
+[info] [CLI] Called Query entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "getPrice()",
+						"children": [
+							{
+								"actionId": "RXJS_METHOD_STATEMENT_CREATE",
+								"label": "Create Statement",
+								"callPath": [
+									"getPrice"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[CLI] Called Query entity/actions"
+}
+[info] [API] Response ok: entity/actions: {
+	"result": {
+		"context": {},
+		"children": [
+			{
+				"label": "Properties",
+				"children": [
+					{
+						"actionId": "ADD_FORM",
+						"label": "Create Form Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_CREATE",
+						"label": "Create Data Property",
+						"callPath": []
+					},
+					{
+						"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+						"label": "Create Subject Property",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Inject",
+				"actionId": "INJECT",
+				"callPath": []
+			},
+			{
+				"label": "Methods",
+				"children": [
+					{
+						"label": "getPrice()",
+						"children": [
+							{
+								"actionId": "RXJS_METHOD_STATEMENT_CREATE",
+								"label": "Create Statement",
+								"callPath": [
+									"getPrice"
+								]
+							}
+						]
+					},
+					{
+						"actionId": "METHOD_CREATE",
+						"label": "Create New Method",
+						"callPath": []
+					}
+				]
+			},
+			{
+				"label": "Add Component to Route",
+				"actionId": "ADD_TO_ROUTE",
+				"callPath": []
+			}
+		]
+	},
+	"level": "info",
+	"message": "[API] Response ok: entity/actions"
+}
+[info] [API] Request for rxjs/properties/subject/flow: {
+	"action": "rxjs/properties/subject/flow",
+	"params": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "CTYjmbuf0D",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/subject/flow"
+}
+[info] [CLI] Calling Query rxjs/properties/subject/flow: {
+	"funcParams": {
+		"actionId": "RXJS_PROPERTY_SUBJECT_CREATE",
+		"label": "Create Subject Property",
+		"callPath": []
+	},
+	"level": "info",
+	"message": "[CLI] Calling Query rxjs/properties/subject/flow"
+}
+[info] [CLI] Called Query rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[CLI] Called Query rxjs/properties/subject/flow"
+}
+[info] [API] Response ok: rxjs/properties/subject/flow: {
+	"result": {
+		"context": {},
+		"steps": [
+			{
+				"contextId": "name",
+				"title": "What is the property name?",
+				"subtitle": "in camelCase (e.g. data, dataSource)",
+				"type": "text-input"
+			},
+			{
+				"contextId": "subject",
+				"title": "What type of subject?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "Subject"
+					},
+					{
+						"name": "BehaviorSubject"
+					},
+					{
+						"name": "ReplaySubject"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			},
+			{
+				"contextId": "property",
+				"title": "Which type to use?",
+				"type": "multi-option",
+				"options": [
+					{
+						"name": "string"
+					},
+					{
+						"name": "number"
+					},
+					{
+						"name": "boolean"
+					},
+					{
+						"name": "void"
+					}
+				],
+				"extraOptions": [],
+				"property": "name"
+			}
+		],
+		"request": {
+			"config": {
+				"url": "rxjs/properties/subject/create",
+				"payload": {
+					"name": "name.value",
+					"subjectType": "subject.name",
+					"propertyType": "property.name"
+				}
+			}
+		}
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/subject/flow"
+}
+[info] [API] Request for rxjs/properties/subject/create: {
+	"action": "rxjs/properties/subject/create",
+	"params": {
+		"name": "purchasePrice",
+		"subjectType": "BehaviorSubject",
+		"propertyType": "number"
+	},
+	"context": {
+		"workspace": {
+			"rootPath": "E:/WORK/PriceCreator"
+		},
+		"userContext": {
+			"id": "uE7Tk2hX74",
+			"correlationId": "CTYjmbuf0D",
+			"clickedPath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+			"logEnvId": "development"
+		}
+	},
+	"level": "info",
+	"message": "[API] Request for rxjs/properties/subject/create"
+}
+[info] [CLI] Calling Command rxjs/properties/subject/create: {
+	"funcParams": {
+		"name": "purchasePrice",
+		"subjectType": "BehaviorSubject",
+		"propertyType": "number"
+	},
+	"level": "info",
+	"message": "[CLI] Calling Command rxjs/properties/subject/create"
+}
+[info] [CommandBus]: Dispatching command AddSubjectCommand: {
+	"commandName": "AddSubjectCommand",
+	"payload": {
+		"classFilePath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"name": "purchasePrice",
+		"subjecType": "BehaviorSubject",
+		"propertyType": "number"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Dispatching command AddSubjectCommand"
+}
+[info] [CommandBus]: Handled  AddSubjectCommand: {
+	"commandName": "AddSubjectCommand",
+	"payload": {
+		"classFilePath": "E:/WORK/PriceCreator/src/app/app.component.ts",
+		"name": "purchasePrice",
+		"subjecType": "BehaviorSubject",
+		"propertyType": "number"
+	},
+	"level": "info",
+	"message": "[CommandBus]: Handled  AddSubjectCommand"
+}
+[info] [CLI] Called Command rxjs/properties/subject/create: {
+	"message": "[CLI] Called Command rxjs/properties/subject/create",
+	"level": "info"
+}
+[info] [API] Response ok: rxjs/properties/subject/create: {
+	"result": {
+		"filePath": "E:/WORK/PriceCreator/src/app/app.component.ts"
+	},
+	"level": "info",
+	"message": "[API] Response ok: rxjs/properties/subject/create"
+}

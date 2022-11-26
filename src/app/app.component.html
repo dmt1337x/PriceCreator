@@ -1,0 +1,9 @@
+<form [formGroup]="priceForm" (ngSubmit)="calculate(priceForm)">
+  <input type="number" formControlName="price" placeholder="Cena $" /><input
+    type="submit"
+    value="Przelicz"
+  />
+</form>
+
+
+{{ceilPriceInPLN()}}  - {{showFinalPrice()}}
