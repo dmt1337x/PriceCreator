@@ -14,8 +14,43 @@ export class AppComponent {
   public priceInPLN: number = 0;
   public priceAfterDiscount: number = 0;
   public finalPrice: number = 0;
+  public isShowSettings: boolean = false;
+  public isDiscountSettings: boolean = false;
+  public isMarkUpSettings: boolean = false;
 
   readonly priceForm: FormGroup = new FormGroup({ price: new FormControl() });
+
+  showSetting() {
+    this.isShowSettings = !this.isShowSettings;
+    this.isMarkUpSettings = false;
+    this.isDiscountSettings = false;
+  }
+
+  getMarkUp() {
+    return `${this.markUp} x`;
+  }
+  getDiscount() {
+    const x = 10 - this.discount * 10;
+    return `${x * 10} %`;
+  }
+
+  setDiscount(x: number) {
+    this.discount = x;
+  }
+
+  setMarkUp(x: number) {
+    this.markUp = x;
+  }
+
+  showMarkUpSettings() {
+    this.isMarkUpSettings = !this.isMarkUpSettings;
+    this.isDiscountSettings = false;
+  }
+
+  showDiscountSettings() {
+    this.isDiscountSettings = !this.isDiscountSettings;
+    this.isMarkUpSettings = false;
+  }
 
   calculate(price: FormGroup) {
     this.getPrice(price);
