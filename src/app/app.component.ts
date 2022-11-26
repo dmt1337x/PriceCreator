@@ -26,6 +26,10 @@ export class AppComponent {
     this.isDiscountSettings = false;
   }
 
+  defaultSettings() {
+    window.location.reload();
+  }
+
   getMarkUp() {
     return `${this.markUp} x`;
   }

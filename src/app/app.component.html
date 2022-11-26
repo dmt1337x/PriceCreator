@@ -50,14 +50,16 @@
           >
           <br />
         </div>
+
       </div>
     </div>
 
     <div class="d-flex justify-content-center">
       <div
         *ngIf="isDiscountSettings"
-        class="d-flex justify-content-center w-100"
+        class="d-flex justify-content-center w-100 mt-2"
       >
+        <button (click)="setDiscount(1)" class="me-2 btn btn-primary">0%</button>
         <button (click)="setDiscount(0.9)" class="me-2 btn btn-primary">10%</button>
         <button (click)="setDiscount(0.8)" class="me-2 btn btn-primary">20%</button>
         <button (click)="setDiscount(0.7)" class="me-2 btn btn-primary">30%</button>
@@ -69,8 +71,6 @@
         *ngIf="isMarkUpSettings"
         class="d-flex justify-content-center w-100 mt-2"
       >
-        <button (click)="setMarkUp(2)" class="me-2 btn btn-primary">2x</button>
-        <button (click)="setMarkUp(2.5)" class="me-2 btn btn-primary">2.5x</button>
         <button (click)="setMarkUp(3)" class="me-2 btn btn-primary">3x</button>
         <button (click)="setMarkUp(3.5)" class="me-2 btn btn-primary">3.5x</button>
         <button (click)="setMarkUp(4)" class="me-2 btn btn-primary">4x</button>
