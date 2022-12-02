@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Observable, of, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   public dollarExRate: number = 4.5;
-  public markUp: number = 4.5;
+  public markUp: number = 3;
   public discount: number = 0.7;
   public priceInDollar: number = 0;
   public priceInPLN: number = 0;
@@ -18,8 +19,19 @@ export class AppComponent {
   public isDiscountSettings: boolean = false;
   public isMarkUpSettings: boolean = false;
   public admin: boolean = false;
+  public markUp$: Observable<number[]> = of([2, 2.5, 3, 3.5, 4, 4.5]);
+  public discount$: Observable<{ name: string; value: number }[]> = of([
+    { name: '10%', value: 0.9 },
+    { name: '20%', value: 0.8 },
+    { name: '30%', value: 0.7 },
+    { name: '40%', value: 0.6 },
+    { name: '50%', value: 0.5 },
+  ]);
 
-  readonly priceForm: FormGroup = new FormGroup({ price: new FormControl() });
+  readonly priceForm: FormGroup = new FormGroup({
+    price: new FormControl(),
+    shipping: new FormControl(),
+  });
 
   showSetting() {
     this.isShowSettings = !this.isShowSettings;
@@ -30,6 +42,7 @@ export class AppComponent {
   getMarkUp() {
     return `${this.markUp} x`;
   }
+
   getDiscount() {
     const x = 10 - this.discount * 10;
     return `${x * 10} %`;
@@ -53,23 +66,14 @@ export class AppComponent {
     this.isMarkUpSettings = false;
   }
 
-  calculate(price: FormGroup) {
-    if (this.admin) {
-      this.admin = false;
-    }
-    if (price.get('price')?.value == 373737) {
-      this.admin = true;
-      this.isMarkUpSettings = false;
-      this.isDiscountSettings = false;
-      this.isShowSettings = false;
-    }
-
-    this.getPrice(price);
+  calculate(data: FormGroup) {
+    this.getPrice(data);
     this.convertToPLN();
   }
 
   getPrice(price: FormGroup) {
-    this.priceInDollar = price.get('price')?.value;
+    this.priceInDollar =
+      price.get('price')?.value + price.get('shipping')?.value;
   }
 
   convertToPLN() {
