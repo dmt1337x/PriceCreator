@@ -1,5 +1,5 @@
 <div class="bg-black text-white min-vh-100">
-  {{ markUp}}x / {{((1-discount)*100).toFixed(0)}}%
+  <span class="ms-3" [ngClass]="markUp !== 3 ? 'activ' : ''">{{ markUp}}x </span> / <span [ngClass]="discount !== 0.7 ? 'activ' : ''"> {{((1 - discount) * 100).toFixed(0)}}%</span>
   <div class="d-flex justify-content-center w-100 pt-5">
     <form [formGroup]="priceForm">
       <input
