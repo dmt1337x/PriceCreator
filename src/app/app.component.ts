@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Observable, of, Subject } from 'rxjs';
+import { Observable, of } from 'rxjs';
+
+//ng build --base-href="/ceny/"
 
 @Component({
   selector: 'app-root',
