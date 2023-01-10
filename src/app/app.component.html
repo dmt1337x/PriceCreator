@@ -4,14 +4,8 @@
       <input
         type="number"
         formControlName="price"
-        placeholder="Cena $"
+        placeholder="Cena Total $"
         class="form-control mb-2"
-      />
-      <input
-        type="number"
-        formControlName="shipping"
-        placeholder="Wysyłka $"
-        class="form-control"
       />
     </form>
     <button (click)="calculate(priceForm)" class="btn btn-success ms-3">
@@ -61,11 +55,13 @@
         class="d-flex justify-content-center w-100 mt-2"
       >
         <button
-          *ngFor="let discount of discount$ | async"
-          (click)="setDiscount(discount.value)"
+          *ngFor="let item of discount$ | async"
+          (click)="setDiscount(item.value)"
           class="me-2 btn btn-primary"
         >
-          {{ discount.name }}
+          <span [ngClass]="item.value === discount ? 'activ' : ''">{{
+            item.name
+          }}</span>
         </button>
       </div>
 
@@ -74,11 +70,11 @@
         class="d-flex justify-content-center w-100 mt-2"
       >
         <button
-          *ngFor="let markUp of markUp$ | async"
-          (click)="setMarkUp(markUp)"
+          *ngFor="let item of markUp$ | async"
+          (click)="setMarkUp(item)"
           class="me-2 btn btn-primary"
         >
-          {{ markUp }}x
+          <span [ngClass]="item === markUp ? 'activ' : ''">{{ item }}x</span>
         </button>
       </div>
     </div>

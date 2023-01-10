@@ -30,7 +30,6 @@ export class AppComponent {
 
   readonly priceForm: FormGroup = new FormGroup({
     price: new FormControl(),
-    shipping: new FormControl(),
   });
 
   showSetting() {
@@ -72,8 +71,7 @@ export class AppComponent {
   }
 
   getPrice(price: FormGroup) {
-    this.priceInDollar =
-      price.get('price')?.value + price.get('shipping')?.value;
+    this.priceInDollar = price.get('price')?.value;
   }
 
   convertToPLN() {
