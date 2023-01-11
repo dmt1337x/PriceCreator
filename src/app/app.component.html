@@ -1,12 +1,11 @@
 <div class="bg-black text-white min-vh-100">
-  <span class="ms-3" [ngClass]="markUp !== 3 ? 'activ' : ''">{{ markUp}}x </span> / <span [ngClass]="discount !== 0.7 ? 'activ' : ''"> {{((1 - discount) * 100).toFixed(0)}}%</span>
   <div class="d-flex justify-content-center w-100 pt-5">
     <form [formGroup]="priceForm">
       <input
         type="number"
         formControlName="price"
         placeholder="Cena Total $"
-        class="form-control mb-2"
+        class="form-control"
       />
     </form>
     <button (click)="calculate(priceForm)" class="btn btn-success ms-3">
@@ -24,7 +23,12 @@
 
   <div class="mt-5">
     <div class="text-center">
-      <button (click)="showSetting()" class="mt-5 btn btn-primary">
+      <span class="d-flex justify-content-center w-100">
+        <span class="me-1" [ngClass]="markUp !== 3 ? 'activ' : ''">{{ markUp }}x</span> / <span class="ms-1" [ngClass]="discount !== 0.7 ? 'activ' : ''">
+          {{ ((1 - discount) * 100).toFixed(0) }}%</span
+        >
+      </span>
+      <button (click)="showSetting()" class="mt-3 btn btn-primary">
         USTAWIENIA
       </button>
     </div>
