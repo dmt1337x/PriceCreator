@@ -11,7 +11,7 @@ import { Observable, of } from 'rxjs';
 })
 export class AppComponent {
   public dollarExRate: number = 4.5;
-  public markUp: number = 3;
+  public markUp: number = 5;
   public discount: number = 0.7;
   public priceInDollar: number = 0;
   public priceInPLN: number = 0;
@@ -21,13 +21,11 @@ export class AppComponent {
   public isDiscountSettings: boolean = false;
   public isMarkUpSettings: boolean = false;
   public admin: boolean = false;
-  public markUp$: Observable<number[]> = of([2, 2.5, 3, 3.5, 4, 4.5]);
+  public markUp$: Observable<number[]> = of([3, 3.5, 4, 4.5, 5, 5.5, 6]);
   public discount$: Observable<{ name: string; value: number }[]> = of([
     { name: '10%', value: 0.9 },
     { name: '20%', value: 0.8 },
     { name: '30%', value: 0.7 },
-    { name: '40%', value: 0.6 },
-    { name: '50%', value: 0.5 },
   ]);
 
   readonly priceForm: FormGroup = new FormGroup({
@@ -68,7 +66,7 @@ export class AppComponent {
   }
 
   calculate(data: FormGroup) {
-    this.closeAllSetting();
+    // this.closeAllSetting();
     this.getPrice(data);
     this.convertToPLN();
   }
@@ -118,13 +116,13 @@ export class AppComponent {
       return (this.finalPrice = 74.9);
     }
     if (this.priceAfterDiscount > 75 && this.priceAfterDiscount <= 80) {
-      return (this.finalPrice = 80.9);
+      return (this.finalPrice = 79.9);
     }
     if (this.priceAfterDiscount > 80 && this.priceAfterDiscount <= 85) {
       return (this.finalPrice = 84.9);
     }
     if (this.priceAfterDiscount > 85 && this.priceAfterDiscount <= 90) {
-      return (this.finalPrice = 90.9);
+      return (this.finalPrice = 89.9);
     }
     if (this.priceAfterDiscount > 90 && this.priceAfterDiscount <= 95) {
       return (this.finalPrice = 94.9);
