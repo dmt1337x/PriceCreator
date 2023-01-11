@@ -68,6 +68,7 @@ export class AppComponent {
   }
 
   calculate(data: FormGroup) {
+    this.closeAllSetting();
     this.getPrice(data);
     this.convertToPLN();
   }
@@ -83,6 +84,12 @@ export class AppComponent {
 
   ceilPriceInPLN() {
     return this.priceInPLN < 45 ? 44.9 : Math.ceil(this.priceInPLN) - 0.1;
+  }
+
+  closeAllSetting() {
+    this.isShowSettings = false;
+    this.isMarkUpSettings = false;
+    this.isDiscountSettings = false;
   }
 
   showFinalPrice(): number {
