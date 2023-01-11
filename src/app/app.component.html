@@ -23,7 +23,7 @@
 
   <div class="mt-5">
     <div class="text-center">
-      <span class="d-flex justify-content-center w-100">
+      <span *ngIf="discount !== 0.7 || markUp !== 3 " class="d-flex justify-content-center w-100">
         <span class="me-1" [ngClass]="markUp !== 3 ? 'activ' : ''">{{ markUp }}x</span> / <span class="ms-1" [ngClass]="discount !== 0.7 ? 'activ' : ''">
           {{ ((1 - discount) * 100).toFixed(0) }}%</span
         >
