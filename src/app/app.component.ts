@@ -11,8 +11,8 @@ import { Observable, of } from 'rxjs';
 })
 export class AppComponent {
   public dollarExRate: number = 4.5;
-  public markUp: number = 5;
-  public discount: number = 0.7;
+  public markUp: number = 4;
+  public discount: number = 0.8;
   public priceInDollar: number = 0;
   public priceInPLN: number = 0;
   public priceAfterDiscount: number = 0;
@@ -21,7 +21,7 @@ export class AppComponent {
   public isDiscountSettings: boolean = false;
   public isMarkUpSettings: boolean = false;
   public admin: boolean = false;
-  public markUp$: Observable<number[]> = of([3, 3.5, 4, 4.5, 5, 5.5, 6]);
+  public markUp$: Observable<number[]> = of([3, 3.5, 4, 4.5, 5]);
   public discount$: Observable<{ name: string; value: number }[]> = of([
     { name: '10%', value: 0.9 },
     { name: '20%', value: 0.8 },
